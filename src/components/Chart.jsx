@@ -4,6 +4,8 @@ import { Chart } from 'chart.js/auto';
 import { useEffect, useState } from "react";
 import data from './data.json'
 import '../index.css'
+// eslint-disable-next-line no-unused-expressions
+Chart
 const options = {
     plugins:{
         legend:{

@@ -7,66 +7,66 @@ import '../index.css'
 // eslint-disable-next-line no-unused-expressions
 Chart
 const options = {
-    plugins:{
-        legend:{
-            position:'top'
-        },
-        title:{
-            display: 'true',
-            text:"Line Chart"
-        },
-       scales: {
-        yAxes: [
-            {
-               ticks:{
-                min: 0,
-                max: 10,
-                stepSize: 1,
-               } 
-            }
-        ]
-       }
+  plugins: {
+    legend: {
+      position: 'top'
+    },
+    title: {
+      display: 'true',
+      text: "Sales Chart"
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            min: 0,
+            max: 6,
+            stepSize: 1,
+          }
+        }
+      ]
     }
+  }
 }
-  const Chartflow = () => {
-    const [chartData, setChartData] = useState({})
+const Chartflow = () => {
+  const [chartData, setChartData] = useState({})
 
   useEffect(() => {
-      setChartData({
-        labels: data.map(item => item.month),
-        datasets: [
-          {
-            label:'Sales for 2021',
-            data: data.map((item) => item.Amount),
-            fill: true,
-            tension: 0.1,
-            borderColor: 'rgb(75, 192, 192)',
-            backgroundColor: 'rgb(75, 192, 192,0.5)',
-            pointBackgroundColor:['red'],
-            pointBorderColor:['red'],
-          },
-          {
-            label:'Sales for 2022',
-            data: data.map((item) => item.Amount2),
-            fill: true,
-            tension: 0.1,
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-            pointBackgroundColor:['blue'],
-            pointBorderColor:['blue'],
-          },
-        ],
-      })
-    
+    setChartData({
+      labels: data.map(item => item.month),
+      datasets: [
+        {
+          label: 'Sales for 2021',
+          data: data.map((item) => item.Amount),
+          fill: true,
+          tension: 0.1,
+          borderColor: 'rgb(75, 192, 192)',
+          backgroundColor: 'rgb(75, 192, 192,0.5)',
+          pointBackgroundColor: ['red'],
+          pointBorderColor: ['red'],
+        },
+        {
+          label: 'Sales for 2022',
+          data: data.map((item) => item.Amount2),
+          fill: true,
+          tension: 0.1,
+          borderColor: 'rgb(255, 99, 132)',
+          backgroundColor: 'rgba(255, 99, 132, 0.5)',
+          pointBackgroundColor: ['blue'],
+          pointBorderColor: ['blue'],
+        },
+      ],
+    })
+
 
   }, [])
 
-    return (
+  return (
     <div className='chart_flow'>
-    <h1>Line Chart</h1>
-    {chartData && chartData?.datasets && (
-    <Line options={options} data={chartData}/>
-    )}
+      <h1>Line Chart</h1>
+      {chartData && chartData?.datasets && (
+        <Line options={options} data={chartData} />
+      )}
     </div>
   )
 }

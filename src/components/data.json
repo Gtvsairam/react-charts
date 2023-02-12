@@ -1,0 +1,55 @@
+
+[
+    {   
+       "Amount":"1200000",
+       "Amount2":"2000000",
+       "month":"Jan"
+    },
+    {
+       "Amount":"2700000",
+       "Amount2":"3200000",
+       "month":"Feb"
+    },
+    {
+       "Amount":"3400000",
+       "Amount2":"4000000",
+       "month":"Mar"
+    },
+    {
+       "Amount":"3100000",
+       "Amount2":"6500000",
+       "month":"Apr"
+    },
+    {
+       "Amount":"5800000",
+       "Amount2":"5500000",
+       "month":"May"
+    },
+    {
+       "Amount":"3500000",
+       "Amount2":"4800000",
+       "month":"Jun"
+    },
+    {
+       "Amount":"3450000",
+       "Amount2":"2300000",
+       "month":"Jul"
+    },
+    {
+       "Amount":"1600000",
+       "Amount2":"3500000",
+       "month":"Aug"
+    },
+    {
+       "Amount":"4900000",
+       "Amount2":"7500000",
+       "month":"Sep"
+    },
+    {
+       "Amount":"3800000",
+       "Amount2":"8500000",
+       "month":"Oct"
+    }
+ ]
+
+ 

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.chart_flow{
+  height: 800px;
+  width: 80%;
+  margin: auto;
+}
+.chart_flow h1{
+  color: rgb(225, 168, 24);
+  text-shadow: 5px 3px 6px rgb(204, 204, 88);
+}
+ul li {
+  list-style: none;
+}
+.navbar-click ul li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  float: right;
+  text-align: center;
+  /* letter-spacing: 0.5px; */
+}
+.navbar-click ul li a{
+  text-transform: uppercase;
+  color: rgb(255, 0, 0);
+  top: 15px;
+  padding: 50px auto;
+  position: relative;
+  right: 50px;
+  text-decoration: none;
+  box-shadow: 2px 5px 8px rgb(77, 75, 75);
+  text-align: center;
+  background-color: rgba(111, 204, 189, 0.763);
+}
+.navbar-click ul li a:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgba(153, 232, 232, 0.806),
+
+}
